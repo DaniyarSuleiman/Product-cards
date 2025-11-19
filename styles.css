@@ -1,0 +1,124 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+  color: #515076;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.the-first-headline {
+  width: 846px;
+  height: 78px;
+  font-size: 70px;
+  line-height: 78px;
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 110px;
+  position: relative;
+}
+
+.card-container {
+  width: 340px;
+  height: 573px;
+  box-shadow: 2px 2px 10px 0px #5150761A;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: #F7F7FA;
+}
+
+.product-img {
+  border-radius: 20px;
+}
+
+.product-category {
+  width: 171px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #A5A3B9;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.product-name {
+  height: 27px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  height: 36px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.compound {
+  width: 49px;
+  height: 18px;
+  line-height: 18px;
+}
+
+.product-compound {
+  height: 64px;
+  margin-left: 12px;
+  list-style-type: circle;
+}
+
+.product-price-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.product-price-label {
+  width: 56px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-price {
+  height: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1110px;
+  height: 1191px;
+  gap: 45px;
+  margin-bottom: 116px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1110px;
+  background-image: url(/images/bg-flowers.png);
+  background-size: 790px 697px;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}

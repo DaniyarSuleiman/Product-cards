@@ -140,3 +140,7 @@ body {
   border-color: #515076;
   box-shadow: 2px 2px 10px 0px #5150761A;
 }
+
+.change-color-for-button {
+  background-color: aqua;
+}

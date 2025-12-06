@@ -20,13 +20,13 @@ changeCardsColorButton.addEventListener('click', () => {
 
 // Переход на страницу Google.com с помощью простой функции
 
-const linkToGoogleBtn = document.querySelector('#open-page-google-btn');
-const googleURL = ('https://google.com');
-linkToGoogleBtn.addEventListener('click', openGoogle);
+const openGoogleBtn = document.querySelector('#open-page-google-btn');
+const googleURL = 'https://google.com';
+openGoogleBtn.addEventListener('click', openGoogle);
 
 function openGoogle() {
   const answer = confirm("Вы точно хотите перейти на Google.com?");
-  if(answer === true) {
+  if (answer === true) {
     window.open(googleURL)
   } else {
     return;
@@ -35,7 +35,7 @@ function openGoogle() {
 
 // Вывод в консоль
 
-const outputConsoleBtn = document.querySelector('#output-console-btn');
+const outputConsoleBtn = document.querySelector('#output-console-btn'); 
 outputConsoleBtn.addEventListener('click', () => outputConsoleLogAlert('ДЗ №4'));
 
 function outputConsoleLogAlert(message) {
@@ -55,16 +55,8 @@ function outputConsoleLog(element) {
 // Кнопка изменяющая свой цвет
 
 const changeBtnColor = document.getElementById('change-btn-color');
-const lightVioletBtnClr = '#7875ddff';
-const originalColor = changeBtnColor.style.backgroundColor || ''; // Запоминаем оригинальный цвет
-let isViolet = false; // Переменная для отслеживания состояния
 
 changeBtnColor.addEventListener('click', () => {
-  if (isViolet) {
-    changeBtnColor.style.backgroundColor = originalColor; // Возвращаем оригинальный цвет
-  } else {
-    changeBtnColor.style.backgroundColor = lightVioletBtnClr; // Меняем на фиолетовый
-  }
-  isViolet = !isViolet; // Переключаем состояние
+  changeBtnColor.classList.toggle('change-btn-color.change-color-for-button')
 });
 

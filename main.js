@@ -57,6 +57,6 @@ function outputConsoleLog(element) {
 const changeBtnColor = document.getElementById('change-btn-color');
 
 changeBtnColor.addEventListener('click', () => {
-  changeBtnColor.classList.toggle('change-btn-color.change-color-for-button')
+  changeBtnColor.classList.toggle('bg-aqua')
 });
 

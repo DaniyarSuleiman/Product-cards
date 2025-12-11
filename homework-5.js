@@ -1,11 +1,14 @@
 // Задание №3. Создание функций принимающих аргументы город и температура.
 
 function getTemperature(town, temperature) {
-  console.log(`В городе ${town} сейчас ${temperature} градусов.`);
+  return `В городе ${town} сейчас ${temperature} градусов.`;
 }
 
-getTemperature('Сибай', -24);
-getTemperature('Уфа', -18)
+const message1 = getTemperature('Сибай', -24);
+const message2 = getTemperature('Уфа', -18);
+
+console.log(message1);
+console.log(message2);
 
 // Задание №4.
 

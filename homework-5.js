@@ -1,17 +1,17 @@
 // Задание №3. Создание функций принимающих аргументы город и температура.
 
-function townWeather(town, temperature,) {
+function getTemperature(town, temperature) {
   console.log(`В городе ${town} сейчас ${temperature} градусов.`);
 }
 
-townWeather('Сибай', -24);
-townWeather('Уфа', -18)
+getTemperature('Сибай', -24);
+getTemperature('Уфа', -18)
 
 // Задание №4.
 
 const LIGHT_SPEED = 299792458; 
 
-function speedTest(speed) { 
+function compareSpeed(speed) { 
   if (speed > LIGHT_SPEED) { 
     console.log('Сверхсветовая скорость'); 
   } else if (speed < LIGHT_SPEED) { 
@@ -21,16 +21,16 @@ function speedTest(speed) {
   } 
 } 
 
-speedTest(200000);
-speedTest(299792458);
-speedTest(399792458);
+compareSpeed(200000);
+compareSpeed(299792458);
+compareSpeed(399792458);
 
 // Задание №5.
 
 const product = 'Хлеб';
 const productPrice = 50;
 
-function calc(budget) {
+function buyProduct(budget) {
   if (budget >= productPrice) {
     console.log(`Вы купили ${product} за ${productPrice} рублей. Спасибо за покупку!`);
   } else {
@@ -39,18 +39,18 @@ function calc(budget) {
   }
 }
 
-calc(75);
-calc(50);
-calc(40);
+buyProduct(75);
+buyProduct(50);
+buyProduct(40);
 
 // Задание №6.
 
-const cityWeather = (city, temperature) => {
-  console.log(`В городе ${city} сейчаc ${temperature} градусов.`)
+const getNumberPages = (book, pages) => {
+  console.log(`В книге ${book} вы прочитали ${pages} страниц.`)
 }
 
-townWeather('Москва', -15);
-townWeather('Казань', -19);
+getNumberPages('Война и мир', 100);
+getNumberPages('Преступление и наказание', 50);
 
 // Задание №7.
 

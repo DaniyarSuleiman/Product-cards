@@ -43,41 +43,33 @@ printPropertyValue(car, 'brand');
 
 // Задание №7
 
-let productList = ['eggs', 'cheese', 'bread'];
+const productList = ['eggs', 'cheese', 'bread'];
 
 // Задание №8
 
-let person = [
+let persons = [
     {name: 'Daniyar', userAge: 20, country: 'Russia'},
     {name: 'Vladislav', userAge: 20, country: 'Ukraine'},
-    {name: 'Artur', userAge: 36, country: 'Russia'}
+    {name: 'Artur', userAge: 12, country: 'Russia'}
 ];
 
-person.push({name: 'Michael', age: 24, country: 'Belarus'});
-console.log(person);
+persons.push({name: 'Michael', userAge: 24, country: 'Belarus'});
+console.log(persons);
 
 // Задание №9
 
-let human = [
+const humans = [
     {name: 'Elena', userAge: 28, country: 'Kazakhstan'},
-    {name: 'Sergey', userAge: 45, country: 'Belarus'},
+    {name: 'Sergey', userAge: 16, country: 'Belarus'},
     {name: 'Daria', userAge: 19, country: 'Ukraine'} 
 ];
 
-let mergingArraysPersons = [...person, ...human];
-console.log(mergingArraysPersons);
+let mergingPersons = [...persons, ...humans];
+console.log(mergingPersons);
 
-// Задание №10
+const addAgeProp = mergingPersons.map(person => ({
+  ...person,
+  adult: person.userAge >= 18
+}));
 
-function findOutAge(age) {
-    if (age >= 30) {
-        console.log('Этот человек зрелый.');
-    } else {
-        console.log('Этот тип заряженный.');
-    }
-}
-
-findOutAge(mergingArraysPersons[0].userAge);
-findOutAge(mergingArraysPersons[1].userAge);
-findOutAge(mergingArraysPersons[4].userAge);
-findOutAge(mergingArraysPersons[5].userAge);
+console.log(addAgeProp);

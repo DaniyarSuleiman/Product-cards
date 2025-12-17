@@ -48,20 +48,34 @@ const productList = ['eggs', 'cheese', 'bread'];
 // Задание №8
 
 let persons = [
-    {name: 'Daniyar', userAge: 20, country: 'Russia'},
-    {name: 'Vladislav', userAge: 20, country: 'Ukraine'},
-    {name: 'Artur', userAge: 12, country: 'Russia'}
+    {name: 'Daniyar',
+        userAge: 20,
+        country: 'Russia'},
+    {name: 'Vladislav',
+        userAge: 20,
+        country: 'Ukraine'},
+    {name: 'Artur',
+        userAge: 12,
+        country: 'Russia'}
 ];
 
-persons.push({name: 'Michael', userAge: 24, country: 'Belarus'});
+persons.push({name: 'Michael',
+    userAge: 24,
+    country: 'Belarus'});
 console.log(persons);
 
 // Задание №9
 
 const humans = [
-    {name: 'Elena', userAge: 28, country: 'Kazakhstan'},
-    {name: 'Sergey', userAge: 16, country: 'Belarus'},
-    {name: 'Daria', userAge: 19, country: 'Ukraine'} 
+    {name: 'Elena',
+        userAge: 28,
+        country: 'Kazakhstan'},
+    {name: 'Sergey',
+        userAge: 16,
+        country: 'Belarus'},
+    {name: 'Daria',
+        userAge: 19,
+        country: 'Ukraine'} 
 ];
 
 let mergingPersons = [...persons, ...humans];

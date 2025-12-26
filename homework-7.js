@@ -35,8 +35,7 @@ console.log(filteredById)
 
 // #9
 
-const nameIdArr = userComments.map(({ id, name }) => {{ id, name };
-});
+const nameIdArr = userComments.map(({ id, name }) => {{ id, name }});
 
 // #10
 
